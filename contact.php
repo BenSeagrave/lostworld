@@ -13,7 +13,7 @@ if (array_key_exists('email', $_POST)) {
     $email = new \SendGrid\Mail\Mail();
     $email->setFrom("info@lostworldtattoos.com", "Lost World Tattoos");
     $email->setSubject("New Contact Form Enquiry");
-    $email->addTo("btseagrave@gmail.com", "Ben Seagrave");
+    $email->addTo("info@lostworldtattoos.com", "Lost World Tattoos");
     $email->setReplyTo($_POST['email'], $_POST['name']);
     $email->addContent(
         "text/plain", <<<EOT

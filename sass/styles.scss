@@ -382,6 +382,12 @@ section {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
 }
+.input-group {
+  white-space: nowrap;
+}
+.custom-file {
+  overflow: hidden;
+}
 #form-status {
   height: 50px;
   color: #ff0404;
