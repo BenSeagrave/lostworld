@@ -320,6 +320,9 @@ contactForm.addEventListener("submit", (event) => {
   if (grecaptcha.getResponse() == "") {
     formStatusMessage.innerText = "Please validate the reCaptcha form above first!";
   } else {
+    submitButton.disabled = true;
+    submitButton.style.opacity = '0.5';
+    submitButton.innerText = "Sending...";
     formStatusMessage.innerText = "";
     const formData = new FormData(contactForm);
     email(formData);
