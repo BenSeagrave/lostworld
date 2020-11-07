@@ -9,9 +9,11 @@ const hiddenPhotos = document.querySelectorAll("#hiddenPhotos");
 const artistInfos = document.querySelectorAll(".artist-info");
 const faqContainer = document.querySelector("#accordionContainer");
 const contactForm = document.getElementById("contactForm");
+const submitButton = document.querySelector("#submit-button button");
+const formStatusMessage = document.querySelector("#form-status-message");
 
 
-// Trottle function to be used to limit amount of event calls
+// Trottle function to be used to limit amount of event   calls
 const throttle = (func, limit) => {
   let inThrottle
   return function () {
@@ -303,19 +305,34 @@ function email(data) {
     .then(response => response.json())
     .then(response => {
       console.log(response);
-      message.innerHTML = "response.message";
+      message.innerHTML = response.message;
     })
     .catch(error => {
-      console.log(error);
-      // error.json().then(response => {
-      //   message.innerHTML = response.message
-      // })
+      // console.log(error);
+      error.json().then(response => {
+        formStatusMessage.innerText = response.message;
+      })
     })
 }
 
 
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const formData = new FormData(contactForm);
-  email(formData);
+  if (grecaptcha.getResponse() == "") {
+    formStatusMessage.innerText = "Please validate the reCaptcha form above first!";
+  } else {
+    formStatusMessage.innerText = "";
+    const formData = new FormData(contactForm);
+    email(formData);
+  }
 })
+
+// contactForm.addEventListener("submit", (event) => {
+//   event.preventDefault();
+
+//   formStatusMessage.innerText = "";
+//   const formData = new FormData(contactForm);
+//   email(formData);
+
+// })
+

@@ -253,37 +253,43 @@
           </div>
         </div>
 
-        <form method="POST" id="contactForm" class="mb-5 text-center" data-aos="fade-up">
+        <form method="POST" id="contactForm" class="mb-5 text-center" data-aos="fade-up" enctype="multipart/form-data">
           <div class="form-row">
             <div class="form-group col-md-4">
-              <input name="name" id="name" type="text" class="form-control" placeholder="Full Name">
+              <input name="name" id="name" type="text" class="form-control" placeholder="Full Name" required>
             </div>
             <div class="form-group col-md-4">
-              <input name="email" type="email" class="form-control" placeholder="Email Address">
+              <input name="email" type="email" class="form-control" placeholder="Email Address" required>
             </div>
             <div class="form-group col-md-4">
-              <input name="number" type="tel" class="form-control" placeholder="Contact No">
+              <input name="number" type="tel" class="form-control" placeholder="Contact No" required>
             </div>
           </div>
 
           <div class="form-group">
-            <textarea name="description" class="form-control" rows="6"
-              placeholder="Please describe your tattoo idea"></textarea>
+            <textarea name="description" class="form-control" rows="6" placeholder="Please describe your tattoo idea"
+              required></textarea>
           </div>
           <div class="form-row">
             <div class="input-group col-md-6 mb-3">
               <div class="custom-file">
-                <input name="file1" type="file" class="custom-file-input" id="inputGroupFile01"
-                  aria-describedby="inputGroupFileAddon01">
-                <label class="custom-file-label" for="inputGroupFile01">Choose a Reference Image</label>
+                <input name="userfile[]" type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01" accept="image/*, .pdf">
+                <label class=" custom-file-label" for="inputGroupFile01">Reference Image</label>
               </div>
             </div>
             <div class="input-group col-md-6 mb-3">
               <div class="custom-file">
-                <input name="file2" type="file" class="custom-file-input" id="inputGroupFile01"
-                  aria-describedby="inputGroupFileAddon01">
-                <label class="custom-file-label" for="inputGroupFile01">Choose a Reference Image</label>
+                <input name="userfile[]" type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01" accept="image/png, image/jpeg">
+                <label class="custom-file-label" for="inputGroupFile01">Reference Image</label>
               </div>
+            </div>
+          </div>
+          <div class="g-recaptcha" data-sitekey="6LfpFd8ZAAAAALagXvvHgqIX92PeLzDd1aPMEzcB"></div>
+          <div class="row">
+            <div id="form-status" class="col text-center">
+              <p id="form-status-message"></p>
             </div>
           </div>
           <div id="submit-button">
@@ -322,6 +328,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./js/bs-custom-file-input.min.js"></script>
   <script src="./js/ekko-lightbox.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="./js/script.js"></script>
 </body>
 
