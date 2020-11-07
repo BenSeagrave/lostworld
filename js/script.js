@@ -203,7 +203,7 @@ const faqs = [
   },
   {
     question: "How should I prepare for my tattoo?",
-    answer: "You should get a good nights sleep, eat plenty of food, and bring a sugary drink/snacks with you. Please make sure your clean, especially the tattoo area, and you’re wearing appropriate clothing. Please don’t be drunk, high, be on blood thinning tablets, or ill. Any reason why we think you’re not in a suitable state we can refuse to tattoo you."
+    answer: "You should get a good nights sleep, eat plenty of food, and bring a sugary drink/snacks with you. Please make sure you're clean, especially the tattoo area, and you’re wearing appropriate clothing. Please don’t be drunk, high, be on blood thinning tablets, or ill. Any reason why we think you’re not in a suitable state we can refuse to tattoo you."
   },
   {
     question: "How old do I have to be?",
@@ -219,7 +219,7 @@ const faqs = [
   },
   {
     question: "Does it hurt?",
-    answer: "Everyone’s pain threshold is subjective, and also every place on the body is different! If your nervous you can use a numbing cream, or book smaller sessions."
+    answer: "Everyone’s pain threshold is subjective, and also every place on the body is different! If you're nervous you can use a numbing cream, or book smaller sessions."
   },
   {
     question: "What will happen in my appointment?",
@@ -227,7 +227,7 @@ const faqs = [
   },
   {
     question: "What if I can’t make my appointment?",
-    answer: "We require 48 hours notice for you to keep your deposit if you wish to move your appointment. Please call us as this reaches us immediately if you do not inform us and you miss your appointment your deposit will be taken."
+    answer: "We require 48 hours notice for you to keep your deposit if you wish to move your appointment. Please call us as this reaches us immediately if you do not inform us and you miss your appointment, your deposit will be taken."
   },
   {
     question: "How long does my tattoo take to heal?",
