@@ -68,7 +68,7 @@ hamburger.addEventListener("click", e => {
   }
   hamburger.classList.toggle("active");
 });
-// is it a bad idea to add an event listener to whole document? Slow performance?
+
 document.body.addEventListener("click", e => {
   if (hamburger.classList.contains("active")) {
     if (e.target.offsetParent !== navMenu && e.target.offsetParent !== header) {
@@ -230,11 +230,11 @@ const faqs = [
     answer: "We require 48 hours notice for you to keep your deposit if you wish to move your appointment. Please call us as this reaches us immediately if you do not inform us and you miss your appointment your deposit will be taken."
   },
   {
-    question: "How long does my tattoo take to heal? ",
+    question: "How long does my tattoo take to heal?",
     answer: "On average around two weeks to stop shedding, but around four weeks for it to be fully healed. The better it’s looked after the better it will heal!"
   },
   {
-    question: "How do I look after my tattoo? ",
+    question: "How do I look after my tattoo?",
     answer: "We will run through with you a procedure of aftercare after your appointment, but we go on a basic procedure of cleaning and creaming it on an average of three times a day."
   },
   {
@@ -308,7 +308,6 @@ function email(data) {
       message.innerHTML = response.message;
     })
     .catch(error => {
-      // console.log(error);
       error.json().then(response => {
         formStatusMessage.innerText = response.message;
       })
@@ -326,13 +325,3 @@ contactForm.addEventListener("submit", (event) => {
     email(formData);
   }
 })
-
-// contactForm.addEventListener("submit", (event) => {
-//   event.preventDefault();
-
-//   formStatusMessage.innerText = "";
-//   const formData = new FormData(contactForm);
-//   email(formData);
-
-// })
-
