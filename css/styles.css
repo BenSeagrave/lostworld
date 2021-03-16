@@ -287,7 +287,7 @@ section:nth-child(even) {
   margin: 10px 0 15px;
 }
 
-.artist button {
+.artist a {
   font-weight: bold;
   border: 1px solid var(--gold);
   text-transform: uppercase;
@@ -295,7 +295,7 @@ section:nth-child(even) {
   background: var(--gold);
 }
 
-.artist button:hover {
+.artist a:hover {
   color: white;
   background-color: transparent;
 }
