@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Roboto&display=swap");
 
 :root {
   --gold: #ffc021;
@@ -8,18 +8,24 @@ html {
   // Not supported by all browsers. Add JS code to remedy.
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-a, a:hover {
+a,
+a:hover {
   color: white;
   text-decoration: none;
 }
 body {
   background-color: black;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 .btn-gold {
@@ -38,10 +44,10 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0 30px 0;
   &:nth-child(odd) {
-    background: #FFFFFF;
+    background: #ffffff;
   }
   &:nth-child(even) {
-    background: #F3F3F3;
+    background: #f3f3f3;
   }
 }
 .section-header {
@@ -52,7 +58,6 @@ section {
   p {
     color: #0000008e;
   }
-  
 }
 
 #header {
@@ -88,8 +93,7 @@ section {
     opacity: 1;
   }
   i {
-  transition: all ease-in-out 0.3s;
-
+    transition: all ease-in-out 0.3s;
   }
   i:hover {
     color: var(--gold);
@@ -99,7 +103,7 @@ section {
 #nav-menu {
   float: right;
   transition: all ease-in-out 0.3s;
-  
+
   li {
     display: inline-block;
     margin-left: 6px;
@@ -110,7 +114,8 @@ section {
     font-size: 14px;
     color: #7e7e7e;
   }
-  .active, a:hover {
+  .active,
+  a:hover {
     border-bottom: 2px solid var(--gold);
     color: #ffffff;
   }
@@ -208,10 +213,9 @@ section {
   height: 350px;
 
   img {
-  width: 100%;
-  height: auto;
-  margin-top: -50px;
-  
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
   }
   img.bianca-image {
     width: 650px;
@@ -250,12 +254,14 @@ section {
     background: var(--gold);
     &:hover {
       color: white;
-      background-color: transparent;      
+      background-color: transparent;
     }
   }
 }
+
 #gallery {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -276,7 +282,6 @@ section {
       color: var(--gold);
     }
   }
-
 }
 
 .tattoo {
@@ -303,11 +308,13 @@ section {
   margin: 0 auto;
 }
 .tattoo a::after {
-  content: '\A';
+  content: "\A";
   position: absolute;
-  width: 100%; height:100%;
-  top:0; left:0;
-  background:rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
   opacity: 0;
   transition: all 1s;
   -webkit-transition: all 0.5s;
@@ -337,7 +344,7 @@ section {
 
       &:after {
         content: "\2796";
-        
+
         font-size: 13px;
         color: #777;
         float: right;
@@ -345,7 +352,7 @@ section {
         margin-top: 4px;
       }
       &.collapsed:after {
-        content: '\02795';
+        content: "\02795";
       }
     }
   }
@@ -375,7 +382,9 @@ section {
 .contact-info {
   margin-bottom: 20px;
 }
-.contact-address, .contact-number, .contact-email {
+.contact-address,
+.contact-number,
+.contact-email {
   padding: 20px 0;
 }
 .contact-number {
@@ -415,12 +424,11 @@ section {
     right: 0;
 
     &.show {
-      padding: 10px 0;;
+      padding: 10px 0;
       width: 100%;
       background: rgba(0, 0, 0, 0.9);
       transition: all ease-in-out 0.2s;
       transform: scaleX(1);
-
     }
     li {
       display: block;
@@ -438,7 +446,7 @@ section {
       width: 80%;
     }
   }
-    
+
   .artist {
     img.bianca-image {
       width: 650px;

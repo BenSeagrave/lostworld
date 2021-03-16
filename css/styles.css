@@ -8,10 +8,11 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-a, a:hover {
+a,
+a:hover {
   color: white;
   text-decoration: none;
 }
@@ -20,8 +21,13 @@ body {
   background-color: black;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 
@@ -45,11 +51,11 @@ section {
 }
 
 section:nth-child(odd) {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 section:nth-child(even) {
-  background: #F3F3F3;
+  background: #f3f3f3;
 }
 
 .section-header {
@@ -134,7 +140,8 @@ section:nth-child(even) {
   color: #7e7e7e;
 }
 
-#nav-menu .active, #nav-menu a:hover {
+#nav-menu .active,
+#nav-menu a:hover {
   border-bottom: 2px solid var(--gold);
   color: #ffffff;
 }
@@ -354,7 +361,7 @@ section:nth-child(even) {
 }
 
 .tattoo a::after {
-  content: '\A';
+  content: "\A";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -402,7 +409,7 @@ section:nth-child(even) {
 }
 
 #faq .faq-item button.collapsed:after {
-  content: '\02795';
+  content: "\02795";
 }
 
 #contact {
@@ -435,7 +442,9 @@ section:nth-child(even) {
   margin-bottom: 20px;
 }
 
-.contact-address, .contact-number, .contact-email {
+.contact-address,
+.contact-number,
+.contact-email {
   padding: 20px 0;
 }
 
